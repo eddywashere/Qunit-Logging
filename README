@@ -1,0 +1,8 @@
+.js for viewing qunit results in the console
+
+Instructions
+1) Add reference to QUnit
+2) Add test scripts
+3) Add reference to qunit-logging.js 
+
+Results will be rendered in the console :)
