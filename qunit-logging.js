@@ -24,15 +24,19 @@ $(document).ready(function() {
 			
 			msg += 'Assertion: ' + result.message;
 			
-			if (result.actual != undefined && result.expected != undefined){
-				msg += ', Actual: ' + result.actual + ', Expected: ' + result.expected;
-			}
-
 			if(fail){
 				window.console.error(msg);
 			} else {
 				window.console.log(msg);
 			}
+			
+			if (result.actual != undefined && result.expected != undefined){
+				window.console.log('Actual:');
+				window.console.log(result.actual);
+				window.console.log('Expected:');
+				window.console.log(result.expected);
+			}
+
 		}
 
 		QUnit.done = function (result){
